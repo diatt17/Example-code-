@@ -2,6 +2,7 @@ class Project < ApplicationRecord
   has_many :tasks
   belongs_to :user
 
+#THIS IS A COMMENT TEST FOR THIS PART to see how it works 
   def status
     return 'not-started' if tasks.none?
 
